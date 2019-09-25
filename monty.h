@@ -45,11 +45,12 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-void pall(const stack_t *h);
-stack_t *push(stack_t **head, int number);
-void pint(const stack_t *h);
-void pop(const stack_t *h);
+void pall(stack_t **h, unsigned int line_number);
+void push(stack_t **head, unsigned int line_number);
+void pint(stack_t **h, unsigned int line_number);
+void pop(stack_t **h, unsigned int line_number);
 void error_handler(char *name, char *var, char *var2, int num);
 char *file_reader(const char *filename);
+void (*get_function(char *s));
 
 #endif
