@@ -1,9 +1,17 @@
 #ifndef MONTY_H
 #define MONTY_H
 
+#define SIZE 1024
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <string.h>
+#include <unistd.h>
+#include <stdarg.h>
+#include <fcntl.h>
+#include <sys/types.h>
+#include <sys/stat.h>
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -42,5 +50,6 @@ stack_t *push(stack_t **head, int number);
 void pint(const stack_t *h);
 void pop(const stack_t *h);
 void error_handler(char *name, char *var, char *var2, int num);
+char *file_reader(const char *filename);
 
 #endif
