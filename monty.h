@@ -41,5 +41,6 @@ void pall(const stack_t *h);
 stack_t *push(stack_t **head, int number);
 void pint(const stack_t *h);
 void pop(const stack_t *h);
+void error_handler(char *name, char *var, char *var2, int num);
 
 #endif
