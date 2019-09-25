@@ -1,5 +1,9 @@
 #include "monty.h"
-
+/**
+ * push - adds new node to stack
+ * @h: top of stack
+ * Return: NULL
+ */
 stack_t *push(stack_t **head, int number)
 {
 	stack_t *new;

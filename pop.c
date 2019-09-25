@@ -4,7 +4,7 @@
  * @h: top of stack
  * Return: NULL
  */
-void pall(const stack_t *h)
+void pop(const stack_t *h)
 {
 	const stack_t *top = h;
 	const stack_t *topNext = h->next;
